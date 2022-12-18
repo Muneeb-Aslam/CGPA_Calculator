@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #bdc3c7;
+    font-family: sans-serif;
 }
-header{
+header.system{
     color: tomato;
     margin-top: 5%;
     text-align: center;
@@ -42,4 +43,59 @@ header{
     color: tomato;
     font-size: 3rem;
     text-align: center;
+}
+
+/* gpa file css */
+
+
+
+.inputField{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Enterbutton{
+    cursor: pointer;
+    border: solid tomato;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    width: 15vh;
+    font-size: 1.25rem;
+    height: 4vh;
+}
+.Enterbutton:hover{
+    background-color: #ff8818;
+}
+.input{
+    padding-left: 10px;
+    border: solid tomato;
+    border-radius: 15px;
+    width: 50vh;
+    height: 5vh;
+}
+#subjectSection{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.subjects{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gpacalculated{
+    color: tomato;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.75rem;
 }

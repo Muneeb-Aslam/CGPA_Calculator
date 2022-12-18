@@ -1,10 +1,11 @@
 let cgpa = document.getElementById("cgpa");
 let gpa = document.getElementById("gpa");
 
+
 gpa.addEventListener('click',()=>{
-    location.href("gpa.html");
+    location.href=('gpa.html')
 });
 
 cgpa.addEventListener('click',()=>{
-    location.href("cgpa.html");
+    location.href=('cgpa.html')
 });
