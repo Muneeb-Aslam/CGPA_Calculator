@@ -2,4 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #bdc3c7;
+}
+header{
+    color: tomato;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+.menu{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+.items{
+    cursor: pointer;
+    border: solid tomato;
+    border-radius: 15px;
+    width: 30vh;
+    font-size: 2rem;
+    height: 7vh;
+}
+.items:hover{
+    background-color: #ff8818;
+}
+.title{
+    color: tomato;
+    font-size: 3rem;
+    text-align: center;
 }
