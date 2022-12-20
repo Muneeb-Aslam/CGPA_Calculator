@@ -73,6 +73,8 @@ header.system{
 }
 .input{
     padding-left: 10px;
+    font-weight: bold;
+    font-size: .8rem;
     border: solid tomato;
     border-radius: 15px;
     width: 50vh;
@@ -82,15 +84,17 @@ header.system{
     margin-top: 50px;
     margin-left: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: center;
     gap: 10px;
 }
 .subjects{
+    margin-top: 20px;
     display: flex;
+    gap: 40%;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 #gpacalculated{
     color: tomato;
@@ -98,4 +102,24 @@ header.system{
     margin-top: 30px;
     text-align: center;
     font-size: 1.75rem;
+}
+.subjectsdiv{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.gradesinput{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 15px;
+}
+main .Enterbutton{
+    text-align: center;
+    width: 20vh;
+    height: 5vh;
+    margin: 20px auto;
+}
+.input:focus{
+    outline: none;
 }
