@@ -3,9 +3,9 @@ let gpa = document.getElementById("gpa");
 
 
 gpa.addEventListener('click',()=>{
-    location.href=("..//GPA/gpa.html")
+    location.href=("../GPA/gpa.html")
 });
 
 cgpa.addEventListener('click',()=>{
-    location.href=("..//CGPA/cgpa.html")
+    location.href=("../CGPA/cgpa.html")
 });
