@@ -13,7 +13,8 @@ function setAttributes(el, attrs) {
 
   enterbutton.addEventListener("click", () => {
   
-    
+    cgpainput.innerHTML=""
+    gpacalculated.innerText=""
     gradebutton.innerText = "Calculate";
     gradebutton.setAttribute("class", "Enterbutton")
   

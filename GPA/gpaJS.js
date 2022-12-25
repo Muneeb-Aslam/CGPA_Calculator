@@ -4,6 +4,9 @@ let subjectsdiv = document.getElementById("subjects");
 let enterbutton = document.getElementById("enterbutton");
 let SemesterNo = document.getElementById("SemesterNo");
 let subjects = document.getElementById("totalsubjects");
+let gpacalculated = document.getElementById("gpacalculated")
+
+
 
 function setAttributes(el, attrs) {
   for (var key in attrs) {
@@ -15,12 +18,15 @@ let gradebutton = document.createElement("button");
 
 enterbutton.addEventListener("click", () => {
 
-  
+  subjectsdiv.innerHTML=""
+  gpacalculated.innerText=""
+
+
   gradebutton.innerText = "Calculate";
   gradebutton.setAttribute("class", "Enterbutton")
 
-  SemesterNo.innerText = SemesterNo.textContent + " " + semesterinput.value;
-  subjects.innerText = subjects.textContent + " " + subjectsinput.value;
+  SemesterNo.innerText = "Semester No: "+semesterinput.value;
+  subjects.innerText = "Total Subjects: "+subjectsinput.value;
   let intsubjects = parseInt(subjectsinput.value);
   
   
@@ -47,7 +53,7 @@ enterbutton.addEventListener("click", () => {
 
 });
 
-let gpacalculated = document.getElementById("gpacalculated")
+
 
 gradebutton.addEventListener("click", () => {
   const result = CalculateGPA(parseInt(subjectsinput.value));
