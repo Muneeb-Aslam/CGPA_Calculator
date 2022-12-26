@@ -6,7 +6,6 @@ let SemesterNo = document.getElementById("SemesterNo");
 let subjects = document.getElementById("totalsubjects");
 let gpacalculated = document.getElementById("gpacalculated")
 let error = document.getElementById("error")
-let inputs = document.querySelectorAll(".input");
 let gradebutton = document.createElement("button");
 
 function setAttributes(el, attrs) {
@@ -66,6 +65,7 @@ function Clicked() {
 
 
 enterbutton.addEventListener("click", (e) => {
+  let inputs = document.querySelectorAll(".input");
   let flag=true;
   inputs.forEach(element => {
   if (validate(element) === false) {
@@ -85,8 +85,21 @@ enterbutton.addEventListener("click", (e) => {
 
 
 gradebutton.addEventListener("click", () => {
-  const result = CalculateGPA(parseInt(subjectsinput.value));
-  gpacalculated.innerText = `Your GPA is: ${result}`;
+  let inputs = document.querySelectorAll(".input");
+  let flag=true;
+  inputs.forEach(element => {
+  if (validate(element) === false) {
+    flag=false;
+  }
+  
+  });
+  if(flag==true)
+  {
+    error.innerText="";
+    const result = CalculateGPA(parseInt(subjectsinput.value));
+    gpacalculated.innerText = `Your GPA is: ${result}`;
+  }else
+    error.innerText="InputFields are Empty" ;
 });
 
 
