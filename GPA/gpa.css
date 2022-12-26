@@ -7,6 +7,17 @@
     font-family: sans-serif;
     outline: none;
 }
+#error{
+    position: absolute;
+    top: 4%;
+    left: 21%;
+    border: none;
+    height: 20px;
+    text-align: center;
+    font-size: .75rem;
+    color: red;
+    font-weight: bold;
+}
 
 .inputField{
     margin-top: 50px;
