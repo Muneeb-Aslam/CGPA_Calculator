@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #bdc3c7;
+    background: rgb(181,234,218);
+    background: linear-gradient(90deg, rgba(181,234,218,1) 0%, rgba(255,187,186,1) 100%); 
     font-family: sans-serif;
+    outline: none;
 }
 
 .inputField{
